@@ -89,6 +89,7 @@ async function loadContent() {
     const data = await response.json();
 
     if (data && data.success === true) {
+      contentBox.style.whiteSpace = "pre-wrap";
       contentBox.textContent = data.content;
     }
 
